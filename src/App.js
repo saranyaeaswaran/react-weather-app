@@ -44,41 +44,33 @@ class App extends React.Component {
                 error: "Please provide City name and Country to fetch the data"
             })
         }
+
     }
 
     render() {
-        return ( < div >
-            <
-            div className = "wrapper" >
-            <
-            div className = "main" >
-            <
-            div className = "container" >
-            <
-            div className = "row" >
-            <
-            div className = "col-xs-5 title-container" >
-            <
-            Titles / >
-            <
-            /div> <
-            div className = "col-xs-7 form-container" >
-            <
-            Form loadWeather = { this.getWeather }
-            /> <
-            Weather responseCityName = { this.state.responseCityName }
-            responseCountryName = { this.state.responseCountryName }
-            responseMainWeather = { this.state.responseMainWeather }
-            responseWeatherDesc = { this.state.responseWeatherDesc }
-            responseTemp = { this.state.responseTemp }
-            responseError = { this.state.error }
-            /> <
-            /div> <
-            /div> <
-            /div> <
-            /div> <
-            /div> <
-            /div>
+        return ( 
+            <div>
+                <div className = "wrapper">
+                <div className = "main">
+                <div className = "container">
+                <div className = "row">
+                <div className = "col-xs-5 title-container">
+                    <Titles />
+                </div> 
+                <div className = "col-xs-7 form-container" >
+                    <Form loadWeather = { this.getWeather }/> 
+                    <Weather responseCityName = { this.state.responseCityName }
+                            responseCountryName = { this.state.responseCountryName }
+                            responseMainWeather = { this.state.responseMainWeather }
+                            responseWeatherDesc = { this.state.responseWeatherDesc }
+                            responseTemp = { this.state.responseTemp }
+                            responseError = { this.state.error } /> 
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
         )
     }
 }
